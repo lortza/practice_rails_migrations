@@ -7,6 +7,7 @@ class CreateUsers < ActiveRecord::Migration[5.0]
       t.timestamps
     end
 
+    # this is a bad idea. don't do it.
     User.create!([
       {name: 'A', email: '@email.com'},
       {name: 'B', email: 'b@email.com'},

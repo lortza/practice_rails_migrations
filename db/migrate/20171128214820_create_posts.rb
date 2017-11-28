@@ -7,6 +7,7 @@ class CreatePosts < ActiveRecord::Migration[5.0]
       t.timestamps
     end
 
+    # this is a bad idea. don't do it.
     Post.create!([
       {title: 'title A', body: 'body A'},
       {title: 'title B', body: 'body B'},
